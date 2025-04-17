@@ -7,13 +7,13 @@ struct Card {
     char code[4];
     char city[20];
     int population;
-    float area;    // Km²
+    float area; // Km²
     float pib;
     int total_turism_points;
 };
 
 int main() {
-    SetConsoleOutputCP(CP_UTF8);  // set UTF-8 format
+    SetConsoleOutputCP(CP_UTF8);    // set UTF-8 format
     struct Card card01, card02;
     int timer = 1000;
 
@@ -71,7 +71,7 @@ int main() {
     printf("Qual a quantidade total de pontos turísticos da cidade?:\n");
     scanf("%i", &card02.total_turism_points);
 
-    // Print data
+    // Processing data
     _sleep(timer);
     printf("Processando informacoes...\n\n");
 
@@ -85,7 +85,7 @@ int main() {
     printf("PIB: R$ %f bi\n", card01.pib);
     printf("Número de Pontos Turísticos: %i\n", card01.total_turism_points);
 
-    // Print Card01 data
+    // Print Card02 data
     printf("\n###### Carta 02 ######\n");
     printf("Estado: %c\n", card02.state);
     printf("Código: %s\n", card02.code);
